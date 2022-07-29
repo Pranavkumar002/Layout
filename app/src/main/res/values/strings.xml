@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Layout</string>
+    <string name="space_stations">Space Station</string>
+    <string name="flights">Flights</string>
+    <string name="rovers">Rovers</string>
+    <string name="mars">Mars</string>
+    <string name="oneway">One Way</string>
+    <string name="traveller">Traveller</string>
+    <string name="enter_email">Enter Email</string>
+</resources>

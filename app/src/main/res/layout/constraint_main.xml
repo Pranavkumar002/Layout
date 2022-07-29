@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ConstraintActivity">
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_h_45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_v_62"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.62" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_h_2.4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.24" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_v_83"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.83" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_v_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".14" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_h_36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".36" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".43"
+            android:id="@+id/guide_h_43" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".42"
+            android:id="@+id/guide_v_42" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".58"
+            android:id="@+id/guide_v_58" />
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".33"
+            android:id="@+id/guide_h_33"
+            />
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".7"
+            android:id="@+id/guide_h_7"
+            />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:id="@+id/guide_v_33"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".33" />
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:id="@+id/guide_v_17"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".17" />
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:id="@+id/guide_h_78"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".78" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guide_v_08"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".08" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/guide_v_92"
+            app:layout_constraintGuide_percent=".92" />
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/guide_v_55"
+            app:layout_constraintGuide_percent=".55" />
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/guide_v_8"
+            app:layout_constraintGuide_percent=".8" />
+
+
+
+
+        <ImageView
+            android:id="@+id/ivSatellite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+
+            android:background="@mipmap/satellite"
+            app:layout_constraintLeft_toLeftOf="@id/guide_v_17"
+
+            app:layout_constraintBottom_toBottomOf="@id/guide_h_33"
+            app:layout_constraintTop_toTopOf="@id/guide_h_2.4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivSatellite"
+
+            android:text="@string/space_stations"
+            android:textColor="@color/black"
+
+            android:textSize="15sp"
+            app:layout_constraintTop_toTopOf="@id/guide_h_36"
+            app:layout_constraintLeft_toLeftOf="@id/guide_v_14"/>
+
+        <ImageView
+            android:id="@+id/ivRocket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvSpace"
+            android:background="@mipmap/spaceshuttle"
+            app:layout_constraintTop_toTopOf="@id/guide_h_2.4"
+            app:layout_constraintLeft_toLeftOf="@id/guide_v_42"
+            />
+
+
+        <TextView
+            android:id="@+id/tvFlights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivRocket"
+
+
+            android:layout_toRightOf="@+id/tvSpace"
+            android:text="@string/flights"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintTop_toTopOf="@id/guide_h_36"
+            app:layout_constraintRight_toRightOf="@id/guide_v_55"/>
+
+        <ImageView
+            android:id="@+id/ivMoonrover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivRocket"
+            android:background="@mipmap/moonrover"
+            app:layout_constraintTop_toTopOf="@id/guide_h_2.4"
+            app:layout_constraintRight_toRightOf="@id/guide_v_83" />
+
+        <TextView
+            android:id="@+id/tvRover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/tvFlights"
+            android:text="@string/rovers"
+            android:textSize="15sp"
+            app:layout_constraintTop_toTopOf="@id/guide_h_36"
+            app:layout_constraintRight_toRightOf="@id/guide_v_8" />
+
+        <TextView
+            android:id="@+id/tvDca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:background="@color/purple_200"
+            android:paddingLeft="40dp"
+            android:paddingTop="50dp"
+            android:paddingRight="60dp"
+            android:paddingBottom="60dp"
+            android:text="DCA"
+            android:textSize="20sp"
+
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/guide_h_43"
+            app:layout_constraintRight_toRightOf="@id/guide_v_42"/>
+
+        <TextView
+            android:id="@+id/tvMars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_200"
+            android:paddingLeft="60dp"
+            android:paddingTop="50dp"
+            android:paddingRight="35dp"
+            android:paddingBottom="60dp"
+            android:text="@string/mars"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/guide_h_43"
+            app:layout_constraintRight_toLeftOf="@id/guide_v_92"/>
+
+        <ImageView
+            android:id="@+id/ivArrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tvDca"
+            android:padding="5dp"
+            android:src="@drawable/oppp"
+
+            app:layout_constraintTop_toTopOf="@id/guide_h_45"
+            app:layout_constraintRight_toRightOf="@id/guide_v_62"/>
+
+        <Switch
+            android:id="@+id/sthOneway"
+            android:layout_width="173dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/tvDca"
+            android:background="@color/teal_200"
+            android:text="@string/oneway"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/guide_v_08"
+            app:layout_constraintBottom_toBottomOf="@id/guide_h_7"/>
+
+        <TextView
+            android:id="@+id/tvTravel"
+            android:layout_width="111dp"
+            android:layout_height="37dp"
+            android:layout_below="@+id/sthOneway"
+            android:background="@color/teal_200"
+            android:gravity="center"
+            android:text="@string/traveller"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/guide_v_08"
+            app:layout_constraintBottom_toBottomOf="@id/guide_h_78"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
