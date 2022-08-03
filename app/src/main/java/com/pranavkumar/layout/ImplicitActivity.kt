@@ -14,7 +14,7 @@ class ImplicitActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        binding.btnurl.setOnClickListener {
+        binding.btnUrl.setOnClickListener {
             var intent = Intent(Intent.ACTION_VIEW)
             intent.setData(Uri.parse("https://www.opera.com"))
             startActivity(intent)
@@ -23,14 +23,14 @@ class ImplicitActivity : AppCompatActivity() {
 
 
 
-        binding.btndial.setOnClickListener {
+        binding.btnDial.setOnClickListener {
             val phone = "+9417846155"
             val intent = Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", phone, null))
             startActivity(intent)
 
         }
 
-        binding.btnemail.setOnClickListener {
+        binding.btnEmail.setOnClickListener {
             val emailIntent = Intent(Intent.ACTION_SEND)
             emailIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
             emailIntent.type = "vnd.android.cursor.item/email"
@@ -39,7 +39,7 @@ class ImplicitActivity : AppCompatActivity() {
             emailIntent.putExtra(Intent.EXTRA_TEXT, "My email content")
             startActivity(Intent.createChooser(emailIntent, "Send mail using..."))
        }
-        binding.btnmessages.setOnClickListener {
+        binding.btnMessages.setOnClickListener {
             val intent = Intent(Intent.ACTION_SENDTO)
             intent.data = Uri.parse("sms:9417846155")
             startActivity(intent)
