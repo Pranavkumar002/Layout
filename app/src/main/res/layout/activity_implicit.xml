@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/messages"
+            android:id="@+id/btnmessages"
+            android:layout_marginTop="20dp"
+            android:background="@color/transparent"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:id="@+id/btnemail"
+            android:layout_marginTop="20dp"
+            android:background="@color/transparent"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dial"
+            android:id="@+id/btndial"
+            android:layout_marginTop="20dp"
+            android:background="@color/transparent"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+             />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/url"
+            android:id="@+id/btnurl"
+            android:layout_marginTop="20dp"
+            android:background="@color/transparent"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+             />
+
+    </LinearLayout>
+</layout>

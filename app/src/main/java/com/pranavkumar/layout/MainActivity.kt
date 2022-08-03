@@ -13,7 +13,7 @@ import com.pranavkumar.layout.databinding.ActivityMainBinding
         setContentView(binding.root)
 
         binding.btnRelative.setOnClickListener{
-            var intent = Intent(this,RelativeActivity::class.java)
+            var intent = Intent(this,ImplicitActivity::class.java)
             startActivity(intent)
             finish()
         }
