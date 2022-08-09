@@ -15,13 +15,13 @@ class SecondPassActivity : AppCompatActivity() {
             val lastName = intent.getStringExtra("lastname")
             val email = intent.getStringExtra("email")
             val setPassword = intent.getStringExtra("setpassword")
-            val gender = intent.extras?.getInt("")
+
 
             binding.tvFirst.text = "" +firstName
             binding.tvLast.text = "" +lastName
             binding.tvEmailAddress.text = "" +email
             binding.tvPassword.text = "" +setPassword
-            binding.tvPrintgender.text = "" +gender
+
 
         }
     }

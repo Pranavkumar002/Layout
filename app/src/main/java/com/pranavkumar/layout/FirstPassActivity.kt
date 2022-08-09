@@ -51,15 +51,13 @@ class FirstPassActivity : AppCompatActivity() {
             else if (setpassword.isNullOrEmpty())
             {
                 binding.etSetPassword.error = resources.getString(R.string.at_least_6_numbers)
-
             }
-
-
             else
             {
                 Toast.makeText(this, resources.getString(R.string.submit_successfully), Toast.LENGTH_LONG).show()
             }
         }
+
 
 
 
@@ -69,12 +67,14 @@ class FirstPassActivity : AppCompatActivity() {
             intent.putExtra("lastname",binding.etLastName.text.toString())
             intent.putExtra("email",binding.etEnterEmail.text.toString())
             intent.putExtra("setpassword",binding.etSetPassword.text.toString())
-            intent.putExtra("gender",binding.rgGender.checkedRadioButtonId.toString())
+
             startActivity(intent)
+        }
+
+
 
 
 
 
         }
     }
-}
